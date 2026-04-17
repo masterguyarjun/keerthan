@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">LOGO</h2>
+    <nav class="navigation">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="contact">Contact</a>
+        <button class="btnLogin-popup">Login</button>
+    </nav>
+</header>
+
+<!-- SECTIONS -->
+<section class="page active" id="home">
+    <h1 class="title">Welcome Home</h1>
+</section>
+
+<section class="page" id="about">
+    <h1 class="title">About Us</h1>
+</section>
+
+<section class="page" id="services">
+    <h1 class="title">Our Services</h1>
+</section>
+
+<section class="page" id="contact">
+    <h1 class="title">Contact Us</h1>
+</section>
+
+<!-- OVERLAY -->
+<div class="overlay"></div>
+
+<!-- LOGIN / REGISTER POPUP -->
+<div class="wrapper">
+
+    <span class="icon-close">✖</span>
+
+    <!-- LEFT IMAGE -->
+    <div class="form-image"></div>
+
+    <!-- RIGHT FORM -->
+    <div class="form-content">
+
+        <!-- LOGIN -->
+        <div class="form-box login active">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button class="btn">Login</button>
+                <p>Don't have an account?
+                    <a href="#" class="register-link">Register</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- REGISTER -->
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button class="btn">Register</button>
+                <p>Already have an account?
+                    <a href="#" class="login-link">Login</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
